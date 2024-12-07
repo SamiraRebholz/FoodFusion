@@ -26,3 +26,8 @@ nav > ul > li > a {
     text-decoration: none;
     color: #000;
 }
+
+nav ul li a.active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Dicke der Unterstreichungslinie */
+}

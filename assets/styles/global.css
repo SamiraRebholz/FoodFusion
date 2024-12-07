@@ -2,6 +2,7 @@
 @import url(../fonts/synonym/synonym.css);
 @import url(../fonts/tanker/tanker.css);
 @import url(../../components/navbar/navbar.css);
+@import url(../../components/modal/modal.css);
 
 body {
     background: linear-gradient(45deg, #184E68, #57CA85);
@@ -65,8 +66,13 @@ h2#sideText {
     max-width: 100%;
     height: auto;
     z-index: 1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .card h3 {
+    color: var(--text-dark);
     display: none;
     position: absolute;
     top: 50%;
@@ -74,7 +80,20 @@ h2#sideText {
     transform: translate(-50%, -50%);
     z-index: 2;
     font-weight: 300;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
 }
 .card:hover h3 {
     display: block;
+}
+.card h3:hover {
+    text-decoration: underline;
+    text-decoration-thickness: .01rem;
+    cursor: pointer;
 }
