@@ -3,6 +3,7 @@
 @import url(../fonts/tanker/tanker.css);
 @import url(../../components/navbar/navbar.css);
 @import url(../../components/modal/modal.css);
+@import url(../../components/recipes/recipes.css);
 
 body {
     background: linear-gradient(45deg, #184E68, #57CA85);
@@ -24,6 +25,10 @@ h2 {
 h3 {
     font-family: 'Synonym';
     font-size: 1.5rem;
+}
+p {
+    font-family: 'Synonym';
+    font-size: 1rem;
 }
 
 
